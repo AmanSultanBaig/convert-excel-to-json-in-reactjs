@@ -1,3 +1,10 @@
+import XLSX from "xlsx"
+import { make_cols } from "./MakeColumns"
+
+const [excelData, setExcelData] = useState([])
+const [col, setCol] = useState([])
+const [file, setFile] = useState(null)
+
 // upload excel file and set into state
   const handleChange = e => {
     const files = e.target.files
